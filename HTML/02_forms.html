@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms!</title>
+</head>
+
+<body>
+    <!-- Hijacking Internet -->
+    <!-- Searching google -->
+
+    <form action="https://www.google.com/search">
+        <h2>Searching google</h2>
+        <input type="text" name="q">
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="https://www.youtube.com/search">
+        <h2>Searching Youtube</h2>
+        <input type="text" name="q">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Straw Hat</h3>
+    <form action="/demo">
+        <p>
+            <label for="noc">No. of Crew !</label>
+            <input type="number" name="noc" id="noc" min="1" max="100">
+        </p>
+        <p>
+            <input type="checkbox" name="name" id="tony" value="tony">
+            <label for="tony">Chopper</label>
+        </p>
+        <h4>Size</h4>
+        <p>
+            <input type="radio" name="Size" id="s" value="S">
+            <label for="s">Small</label>
+            <input type="radio" name="Size" id="m" value="M">
+            <label for="m">Medium</label>
+            <input type="radio" name="Size" id="l" value="L">
+            <label for="l">Large</label>
+        </p>
+        <p>
+            <label for="swords">Select the Swordsman You like</label>
+            <select name="swordsman" id="sword">
+                <option value="Zoro">Zoro</option>
+                <option value="Mihawk">Mihawk</option>
+                <option value="Ryuma">Ryuma</option>
+                <option value="Brook">Brook</option>
+                <option value="Vista">Vista</option>
+            </select>
+        </p>
+        <p>
+            <label for="nos">Swordstyle</label>
+            <input type="range" name="Swordstyle" id="nos" min="1" max="3">
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

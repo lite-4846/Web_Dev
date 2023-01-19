@@ -1,0 +1,71 @@
+div {
+    width : 80px;
+    height : 80px;
+    border : 2px solid black;
+    display : inline-block;
+    margin : 10px;
+}
+
+#one {
+    background-color : #8ecae6;
+}
+
+#two {
+    background-color : #023047;
+    border-color : #219ebc;
+}
+
+#three {
+    background-color : #219ebc;
+}
+
+#ek {
+    background-color: #006d77;
+    position : static;
+    top : 30px; 
+
+    /* Yeah ! Fine by me. */
+    /* Now ! Since the position is "Static" it wont budge from its position.*/
+}
+
+#don {
+    background-color : #8a8584;
+    position : relative;
+    top : 20px;
+
+    /* Now ! Since the position is "Relative" its vice versa as static.*/
+}
+
+#tin {
+    background-color : #71ca56;
+    position : absolute;
+    top : 30px;
+    left : 20px;
+
+    /* Now! This case is different from others.
+     If you move the object then it will respond to how its parent element is defined
+     
+    For above Example : since the "div" has "html" as its parent,
+    it will be respond according to "html"
+    
+    Also, The main thing about it, it takes up no space in the document 
+    if you leave it as it is like without giving it proper position it will be overwritten by others*/
+}
+
+#char {
+    background-color: #006d77;
+    position: fixed;
+    top: 50px;
+    left: 47.5%;
+
+    /* This can be very useful. As we can see.*/
+}
+
+#pach {
+    background-color: greenyellow;
+    position: sticky;
+    top: 30px;
+
+    /* It is great too. */
+
+}

@@ -1,0 +1,49 @@
+body {
+    background-color: #f5d9d5;
+    font-family: Nunito, sans-serif;
+}
+
+#mainNavbar {
+    font-size : 1.2rem;
+    font-weight : 200;
+}
+
+#mainNavbar .navbar-brand {
+    color : #ff0015;
+    
+}
+
+#mainNavbar .nav-link {
+    color: rgb(164, 164, 255);
+    letter-spacing: 1px;
+}
+
+#mainNavbar .nav-link:hover {
+    color: rgb(212, 212, 255);
+    font-weight: 200;
+}
+
+.navbar-nav {
+    margin: 0 0 0 36.5%;
+}
+
+.bg-primary {
+    opacity: 0.8;
+}
+
+.blurb h2 {
+    font-size: 2.25rem;
+}
+
+.blurb p {
+    line-height: 2;
+}
+
+.content {
+    margin: 90px 0;
+}
+
+.navbar.scrolled {
+    background: rgb(233, 233, 255) !important;
+    transition: background 500ms ;
+}

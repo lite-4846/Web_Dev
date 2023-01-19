@@ -1,0 +1,48 @@
+body {
+    margin : 0px !important;
+    background-color: #2b2d42;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    margin : 250px auto 50px;
+
+    /* transition : 0.3s 1s;  */
+
+    transition : background-color 0.5s 0s, border-radius 0.5s; /* --> This will only change background transition */
+
+    /* The second "1s" is for delay it will delay the transition effect. */
+}
+
+.circle:hover {
+    border-radius: 50%;
+    background-color: #415a77;
+}
+
+div {
+    width : 70px;
+    height: 70px;
+    background-color: hotpink;
+    transition : margin-left 2s, background-color 1s;
+    margin-top : 10px;
+}
+
+section:hover div {
+    margin-left : 200px;
+    background-color: indianred;
+}
+
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(3) {
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+div:nth-of-type(4) {
+    transition-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}

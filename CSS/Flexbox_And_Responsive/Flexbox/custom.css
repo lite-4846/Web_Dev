@@ -1,0 +1,75 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#container {
+    width : 90%;
+    /* height : 500px; */
+    margin : 0 auto;
+    background-color: #003049;
+    border : 10px solid #003049;
+    display : flex;
+    flex-direction: row;
+
+    /* Next one is Justity Content and Flex wrap*/
+    justify-content: center;            /* fles-start, flex-end, space-round, space between, center... */
+    flex-wrap : wrap;                         /* wrap, wrap-reverse, nowrap. */
+    align-content: space-around;              /* this will only work if the flex is wrap or wrap-reverse */
+
+    /* This is works on opposite axis as justify content, like in this exp the x-axis is set by justify content,
+    then y-axis will be set by align-items*/
+    align-items: flex-start;                /* fles-start, flex-end, space-round, space between, center... */
+}
+
+#container div {
+    width : 2rem;
+    height : 200px;
+    text-align : center;
+    font-size: 3.5em;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* New terms of flex-box */
+    flex-basis: 300px;                  /* This work along the main axis, it will change the width of the object */
+    flex-grow: 1;                       /* This will have all the left space in the container, it works in proportion,
+                                            if you gave on them specific value it will consume space in proportion. */
+
+    /* We can also set the max-width */
+    max-width : 10rem;                  /* Since we have set flex-grow it will take max-width since trying to consume the space */
+}
+
+
+/*
+div:nth-of-type(3) {
+    align-self: flex-start;              It is used to specifically move a certain object  
+    flex-grow : 1;
+} 
+*/
+
+
+div:nth-of-type(1) {
+    flex-grow: 2;
+    flex-shrink : 2;                    /* It will shrink twice as fast as others when the space is less. */
+} 
+
+/* main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+main .sidebar {
+    background-color: #6930c3;
+    flex:1 2 300px;
+}
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px;
+} */

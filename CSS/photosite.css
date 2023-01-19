@@ -1,0 +1,19 @@
+body {
+    background-color: #1d2333;
+}
+
+img {
+    width : 29%;
+    height : 300px;
+    margin : calc(10%/6);
+}
+
+nav {
+    color :bisque;
+    border-bottom: 1px solid bisque;
+    width : 29%;
+    padding : 10px 0 ;
+    margin-left : calc(10%/6);
+    font-family: 'Cutive Mono', monospace;
+    font-size : 1.2em;
+}

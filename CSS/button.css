@@ -1,0 +1,30 @@
+body {
+    background-color: #1d2333;
+}
+
+.div {
+    width : 100%;
+    height : 50%;
+    /* margin : 25% 45%; */
+    /* background-color: cadetblue; */
+}
+
+button {
+    display : block;
+    margin : 350px auto ;
+    font-size : 16px;
+    background: none;
+    color : aqua;
+    border-color: aqua ;
+    padding : 10px; 
+    transition : all 0.1s;
+    letter-spacing: 0.1em;
+}
+
+button:hover {
+    color :burlywood;
+    border-color: burlywood;
+    transform : translateY(-0.5em);
+    cursor: pointer;
+    box-shadow: 0.1em 0.1em 0.5em 0.1em burlywood;
+}

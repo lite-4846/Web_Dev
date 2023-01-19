@@ -1,0 +1,23 @@
+body {
+    font-family: 'Opne Sans', monospace;
+}
+
+h1 {
+    font-size : 6em;
+    text-align : center;
+}
+
+nav {
+    display : flex;
+    justify-content: space-between;
+}
+
+ul, li {
+    display: inline;
+}
+
+@media (max-width : 1000px) {
+    body {
+        background-color: #003049;
+    }
+}

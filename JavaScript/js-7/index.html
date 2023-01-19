@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./score.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="first">
+            <img src="pingPong.jpg" alt="">
+            <h4>Ping Pong Score Keeper</h2>
+        </div>
+        <div class="second">
+            <div id="score"><h1 id="panel1">0 </h1><h1>to </h1><h1 id="panel2">0</h1></div>
+            <p class="use">Use the buttons below to keep the score</p>
+            <h2>Playing to
+                <span>
+                    <select name="nor" id="nor" class="rounded">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </span>
+                Rounds
+            </h2>
+        </div>
+        <div class="buttons ">
+            <button id="player1" class="btn btn-primary btn-large ">+1 Player 1</button>
+            <button id="player2" class="btn btn-success btn-large ">+1 Player 2</button>
+            <button id="reset" class="btn btn-danger btn-large ">Reset</button>
+        </div>
+    </div>
+    <script src="score_keeper.js"></script>
+</body>
+
+</html>
