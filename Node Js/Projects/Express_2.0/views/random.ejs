@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head', { title: title}) %>
+    
+<body>
+    <%- include('partials/navbar') %>
+    <div class="container pt-4">
+        <h2>Your age is : <%= rand %>
+        </h2>
+        <% if(rand % 2===0) { %>
+            <h4>That's Even</h4>
+        <% } else { %>
+            <h4>That's Odd</h4>
+        <% } %>
+    </div>
+
+</body>
+</html>

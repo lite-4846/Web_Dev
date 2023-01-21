@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head', { title: title}) %>
+
+<body>
+    <%- include('partials/navbar') %>
+    <div class="container">
+        <div class="py-4 d-flex justify-content-between">
+            <h3 class="d-inline-block"><%= name %></h3>
+            <span>Subscribers : <b><%= subscribers %></b> </span>
+        </div>
+        <div class="">
+            <% for(let post of posts) {%> 
+                <div class="py-4">
+                    <h5><%= post.title %> </h5>
+                    <p>Author : <b><%= post.author %></b></p>
+                    <% if( post.img ) { %>
+                        <img src="<%= post.img %> " alt="">
+                    <% } %>  
+                </div>
+            <% } %> 
+        </div>
+    </div>
+    
+</body>
+</html>
